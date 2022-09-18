@@ -407,9 +407,12 @@ img {
   display: flex;
 }
 
-.footer .address {
-  margin-top: 20px;
+.footer .contacts {
   margin-right: 70px;
+}
+
+.footer .address {
+  margin-top: 20px;  
   font-style: normal;
 }
 
@@ -448,10 +451,6 @@ img {
   color: #ffffff;
 }
 
-.footer .social {
-  margin-right: 93px;
-}
-
 .footer .social .list {
   display: flex;
   margin-top: 20px;
@@ -479,8 +478,8 @@ img {
   background-color: var(--accent-color);
 }
 
-.signup {
-  display: flex; 
+.signup {  
+  margin-left: auto; 
 }
 
 .title-signup {
@@ -494,8 +493,13 @@ img {
   color: #ffffff;
 }
 
-.email-signup {  
-  margin-right: 12px;
+.group-signup {
+  display: flex;
+  gap: 12px;
+}
+
+
+.email-signup { 
   width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -520,14 +524,14 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.email-signup:focus {
+.email-signup:focus,
+.email-signup:hover {
   border: 1px solid var(--accent-color);
 }
 
 .submit-signup {
   display: flex;
-  gap: 10px;
-  margin-top: 36px;
+  gap: 10px;  
   width: 200px;
   height: 50px;
   justify-content: center;
@@ -542,6 +546,7 @@ img {
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  cursor: pointer;
   transition: background-color var(--transit);
 }
 
@@ -572,8 +577,7 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  /* height: 581px; */
+  width: 528px;  
   padding: 40px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -656,12 +660,15 @@ img {
 }
 
 .form-input:focus ~ .form-icon,
+.form-input:hover ~ .form-icon,
 .form-input:not(:placeholder-shown) ~ .form-icon {
   fill: var(--accent-color);
 }
 
 .form-input:focus,
-.form-comment:focus {
+.form-comment:focus,
+.form-input:hover,
+.form-comment:hover {
   border: 1px solid var(--accent-color);
 }
 
@@ -695,6 +702,7 @@ img {
 
 .label-policy {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 8px;
   margin-bottom: 30px;
